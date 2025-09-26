@@ -5,20 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Aravela Angelica Balitor</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to right, #ffb6c1, #add8e6);
+      color: #fff;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+    nav.navbar {
+      background-color: #ff69b4; /* hot pink */
+    }
+    nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+    nav .nav-link:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    footer {
+      background: #add8e6;
+      color: #000;
+    }
+  </style>
 </head>
-<body class="bg-light">
+<body>
 
-<!-- Header -->
+  <!-- Header -->
   <header>
     <img src="arravella.jpg" alt="Aravela Angelica Balitor">
     <h1>Aravela Angelica Balitor</h1>
-    <p>Quantitative Methods Portfolio</p>
+    <p class="lead">Quantitative Methods Portfolio</p>
   </header>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand text-white" href="#">My Portfolio</a>
+      <a class="navbar-brand text-white fw-bold" href="#">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,7 +75,7 @@
           <li class="nav-item"><a class="nav-link" href="#unit3">Unit 3</a></li>
           <li class="nav-item"><a class="nav-link" href="#unit4">Unit 4</a></li>
           <li class="nav-item"><a class="nav-link" href="#unit5">Unit 5</a></li>
-          <li class="nav-item"><a class="nav-link" href="#project">Final Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#final">Final Project</a></li>
           <li class="nav-item"><a class="nav-link" href="#reflections">Reflections</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -41,8 +85,8 @@
 
   <!-- Intro -->
   <section id="intro" class="container">
-    <h2 class="text-center mb-4">Introducing My Portfolio</h2>
-    <div class="card p-4 bg-light">
+    <h2 class="text-center text-pink">Introducing My Portfolio</h2>
+    <div class="card p-4 shadow border-0">
       <p>Hello! I’m <b>Aravella Angelica Balitor</b>. This portfolio is a collection of my works, 
       learnings, and experiences from the <b>Quantitative Methods</b> course. Each unit represents 
       a different skill area, from optimization to system modeling. Through this, I hope to 
@@ -51,18 +95,18 @@
   </section>
 
   <!-- Unit 1 -->
-  <section id="unit1" class="py-5">
+  <section id="unit1" class="bg-light">
     <div class="container">
       <h2 class="text-primary">Unit 1: Linear Programming (Solver Example)</h2>
       <p><strong>Case:</strong> A bakery produces bread and cakes. Each bread requires 2 hours of labor and earns ₱100 profit, while each cake requires 4 hours of labor and earns ₱250 profit. 
-With 100 total labor hours, maximize profit.</p>
+      With 100 total labor hours, maximize profit.</p>
       <p><strong>Optimal Solution (via Excel Solver):</strong> 25 cakes, 0 bread → Profit = ₱6,250.</p>
       <img src="unit1_solver(2).png" alt="Excel Solver Screenshot" class="img-fluid rounded shadow">
     </div>
   </section>
 
   <!-- Unit 2 -->
-  <section id="unit2" class="py-5 bg-light">
+  <section id="unit2">
     <div class="container">
       <h2 class="text-success">Unit 2: Forecasting</h2>
       <p><strong>Example Data (Monthly demand):</strong> 120, 135, 140, 150, 160, 175</p>
@@ -75,7 +119,7 @@ With 100 total labor hours, maximize profit.</p>
   </section>
 
   <!-- Midterm Project -->
-  <section id="midterm" class="py-5">
+  <section id="midterm" class="bg-light">
     <div class="container">
       <h2 class="text-danger">Midterm Project: Case Study</h2>
       <p><strong>Case Study:</strong> A small café produces coffee (₱80 profit, 1hr prep, 2hr serving) and sandwiches (₱50 profit, 2hr prep, 1hr serving).  
@@ -85,40 +129,40 @@ With 100 total labor hours, maximize profit.</p>
     </div>
   </section>
 
-  <!-- Unit 3 Placeholder -->
-  <section id="unit3" class="py-5 bg-light">
+  <!-- Unit 3 -->
+  <section id="unit3">
     <div class="container">
       <h2>Unit 3: Placeholder</h2>
       <p>Content coming soon...</p>
     </div>
   </section>
 
-  <!-- Unit 4 Placeholder -->
-  <section id="unit4" class="py-5">
+  <!-- Unit 4 -->
+  <section id="unit4" class="bg-light">
     <div class="container">
       <h2>Unit 4: Placeholder</h2>
       <p>Content coming soon...</p>
     </div>
   </section>
 
-  <!-- Unit 5 Placeholder -->
-  <section id="unit5" class="py-5 bg-light">
+  <!-- Unit 5 -->
+  <section id="unit5">
     <div class="container">
       <h2>Unit 5: Placeholder</h2>
       <p>Content coming soon...</p>
     </div>
   </section>
 
-  <!-- Final Project Placeholder -->
-  <section id="final" class="py-5">
+  <!-- Final Project -->
+  <section id="final" class="bg-light">
     <div class="container">
       <h2>Final Project</h2>
       <p>Final project details will be added here.</p>
     </div>
   </section>
 
-  <!-- Reflections Placeholder -->
-  <section id="reflections" class="py-5 bg-light">
+  <!-- Reflections -->
+  <section id="reflections">
     <div class="container">
       <h2>Reflections</h2>
       <p>Personal reflections will be added here.</p>
@@ -126,14 +170,15 @@ With 100 total labor hours, maximize profit.</p>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-5">
+  <section id="contact" class="bg-light">
     <div class="container">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:aravela.balitor@example.com">aravela.balitor@example.com</a></p>
     </div>
   </section>
 
-  <footer class="bg-dark text-white text-center py-3">
+  <!-- Footer -->
+  <footer class="text-center py-3">
     <p>&copy; 2025 Aravela Angelica Balitor | Portfolio</p>
   </footer>
 
